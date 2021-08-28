@@ -80,7 +80,9 @@ startActivityForResult = 새로운 액티비티 실행 + 호출한 액티비티�
 
 추가로 manifest에서 activity에 parent지정해주면 뒤돌어가기할 activity 지정할 수 있다. 이때는 부모에서 startActivity할때 finish()하면 안된다.
 
-![Untitled](day2_study%2008e66193349341138132ac4537879c6a/Untitled.png)
+![Untitled](./day2_study/Untitled)
+
+![Untitled.png](day2_study%207428053fea07450389cf5e4c9d1b0e4c/Untitled.png)
 
 **activity → fragment** 
 
@@ -135,7 +137,9 @@ Navigation.findNavController(v).navigate(R.id.action_setting_to_web)
 
 fragment를 넣어주면 findViewById에서 fragment 못찾는다.
 
-![Untitled](day2_study%2008e66193349341138132ac4537879c6a/Untitled%201.png)
+![Untitled1](./day2_study/Untitled1)
+
+![Untitled 1.png](day2_study%207428053fea07450389cf5e4c9d1b0e4c/Untitled_1.png)
 
 Navigation graph 장점
 
