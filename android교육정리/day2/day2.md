@@ -68,7 +68,7 @@ onCreate → onStart→onResume까지는 빠르게 진행된다
 
 - 종료해도 오버뷰에는 남아있다 → 다시 클릭하면 activity created상태 된다
 
-![Untitled](./day2/Untitled)
+![Untitled](./day2/Untitled.png)
 
 ![Untitled](day2%2095274db282db41d597b76c8189c233ca/Untitled.png)
 
@@ -109,7 +109,7 @@ onCreate → onStart→onResume까지는 빠르게 진행된다
 - fragment의 뷰를 activity view 계층에 추가, 삭제, 교체해준다
 - fragmentTransaction으로 묶어서 fragment 전환해준다
 
-![Untitled1](./day2/Untitled1)
+![Untitled1](./day2/Untitled1.png)
 
 ![Untitled](day2%2095274db282db41d597b76c8189c233ca/Untitled%201.png)
 
