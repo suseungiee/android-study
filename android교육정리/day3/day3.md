@@ -4,7 +4,7 @@
 
 - 화면에 보이는 모든것은 view / view group역시 view를 상속
 - view들을 view group에 넣을 수 있다
-- 이러한 view group을 구현한 것이 layout이다
+- 이러한 view group을 구현한 것이 layout이다.
 
 ex) Constraint layout, Linear layout, Relative layout 등이 있다
 
