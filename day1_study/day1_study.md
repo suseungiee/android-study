@@ -26,7 +26,9 @@ Activity가 VIew.onClickListener()상속하고 리스너 등록할때 this 쓰�
 
 ### **Activity 생명주기**
 
-![Untitled](day1_study%20a36f749273e84f1c827b70b51b796a0f/Untitled.png)
+![Untitled](./day1_study/Untitled)
+
+![Untitled.png](day1_study%206c6edb79af8a4a699d76c5b7ef829331/Untitled.png)
 
 - onCreate()
     - Activity가 처음 생성될 때 호출
@@ -50,7 +52,9 @@ Activity가 VIew.onClickListener()상속하고 리스너 등록할때 this 쓰�
 
 ### **Fragment생명주기**
 
-![Untitled](day1_study%20a36f749273e84f1c827b70b51b796a0f/Untitled%201.png)
+![Untitled1](./day1_study/Untitled1)
+
+![Untitled 1.png](day1_study%206c6edb79af8a4a699d76c5b7ef829331/Untitled_1.png)
 
 - onAttach()
     - Fragment가 Activity에 연결될 때 호출
