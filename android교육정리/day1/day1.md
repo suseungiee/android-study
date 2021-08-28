@@ -1,6 +1,6 @@
 # day1
 
-### **res(xml) ↔ Java(source code부분)**
+### **res(xml) ↔ Java(source code부분))**
 
 res : 화면 배치 정의
 
