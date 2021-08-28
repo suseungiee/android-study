@@ -26,7 +26,7 @@ Activity가 VIew.onClickListener()상속하고 리스너 등록할때 this 쓰�
 
 ### **Activity 생명주기**
 
-![Untitled](./day1_study/Untitled)
+![Untitled](./day1_study/Untitled.png)
 
 ![Untitled.png](day1_study%206c6edb79af8a4a699d76c5b7ef829331/Untitled.png)
 
@@ -52,7 +52,7 @@ Activity가 VIew.onClickListener()상속하고 리스너 등록할때 this 쓰�
 
 ### **Fragment생명주기**
 
-![Untitled1](./day1_study/Untitled1)
+![Untitled1](./day1_study/Untitled1.png)
 
 ![Untitled 1.png](day1_study%206c6edb79af8a4a699d76c5b7ef829331/Untitled_1.png)
 
