@@ -67,6 +67,8 @@ rebase and merge하면 commit이력 새로 추가되지 않는다
 
 이렇다고한다. 확인해보면
 
+![Untitled](./git/Untitled)
+
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled.png)
 
 위에가 내가 pull request한거
@@ -74,6 +76,8 @@ rebase and merge하면 commit이력 새로 추가되지 않는다
 밑에가 pull request이후에 merge된거
 
 따라서 최종 이력이 달라서 rebase and merge가 안된다(9308330 ≠2e0bc2a)
+
+![Untitled1](./git/Untitled1)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%201.png)
 
@@ -103,17 +107,23 @@ git flow보면
 
 **fast forward방식**
 
+![Untitled2](./git/Untitled2)
+
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%202.png)
 
 새로운 commit을 생성하지 않는다
 
 **3-way merge**
 
+![Untitled3](./git/Untitled3)
+
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%203.png)
 
 다음과 같이 새로운 commit이력이 생긴다.
 
 **rebase**
+
+![Untitled4](./git/Untitled4)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%204.png)
 
