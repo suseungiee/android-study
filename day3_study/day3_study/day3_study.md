@@ -42,9 +42,11 @@ enum class장점
 
 @Test : 해당 메서드가 테스트 대상임을 알려준다
 
+![Untitled](./day3_study/Untitled.png)
+
 ![Untitled](day3_study%2045fa194910ef48aaa3971e08b2fb2bf8/Untitled.png)
 
-단위테스트는 assert문을 이용하여 (예상결과, 실제 수행결과) 판단
+단테스트는 assert문을 이용하여 (예상결과, 실제 수행결과) 판단
 
 assert문의 종류로는 
 
