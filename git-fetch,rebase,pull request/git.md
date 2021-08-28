@@ -67,7 +67,7 @@ rebase and merge하면 commit이력 새로 추가되지 않는다
 
 이렇다고한다. 확인해보면
 
-![Untitled](./git/Untitled)
+![Untitled](./git/Untitled.png)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled.png)
 
@@ -77,7 +77,7 @@ rebase and merge하면 commit이력 새로 추가되지 않는다
 
 따라서 최종 이력이 달라서 rebase and merge가 안된다(9308330 ≠2e0bc2a)
 
-![Untitled1](./git/Untitled1)
+![Untitled1](./git/Untitled1.png)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%201.png)
 
@@ -107,7 +107,7 @@ git flow보면
 
 **fast forward방식**
 
-![Untitled2](./git/Untitled2)
+![Untitled2](./git/Untitled2.png)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%202.png)
 
@@ -115,7 +115,7 @@ git flow보면
 
 **3-way merge**
 
-![Untitled3](./git/Untitled3)
+![Untitled3](./git/Untitled3.png)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%203.png)
 
@@ -123,7 +123,7 @@ git flow보면
 
 **rebase**
 
-![Untitled4](./git/Untitled4)
+![Untitled4](./git/Untitled4.png)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%204.png)
 
