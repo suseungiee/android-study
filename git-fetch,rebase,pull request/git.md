@@ -63,11 +63,13 @@ conflict없으면 merge된다
 
 rebase and merge하면 commit이력 새로 추가되지 않는다
 
+(rebase하면 commit 해시값 변경된다!! 참고!!)
+
 하지만 fetch and merge 하게되면 fork된 저장소의 기존커밋에 upstream의 커밋이 더해져 커밋내역이 원격과 달라져요! upstream의 커밋은 내용이 같아보여도 author는 같지만 committer가 마스터님으로 되어있는 다른 커밋입니다!
 
 이렇다고한다. 확인해보면
 
-![Untitled](./git/Untitled.png)
+![Untitled](./git/Untitled)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled.png)
 
@@ -77,7 +79,7 @@ rebase and merge하면 commit이력 새로 추가되지 않는다
 
 따라서 최종 이력이 달라서 rebase and merge가 안된다(9308330 ≠2e0bc2a)
 
-![Untitled1](./git/Untitled1.png)
+![Untitled1](./git/Untitled1)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%201.png)
 
@@ -107,7 +109,7 @@ git flow보면
 
 **fast forward방식**
 
-![Untitled2](./git/Untitled2.png)
+![Untitled2](./git/Untitled2)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%202.png)
 
@@ -115,7 +117,7 @@ git flow보면
 
 **3-way merge**
 
-![Untitled3](./git/Untitled3.png)
+![Untitled3](./git/Untitled3)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%203.png)
 
@@ -123,7 +125,7 @@ git flow보면
 
 **rebase**
 
-![Untitled4](./git/Untitled4.png)
+![Untitled4](./git/Untitled4)
 
 ![Untitled](git-fork,%20pull%20request,%20rebase%2023c2aeb294d944f0a4eca7f5b3c48381/Untitled%204.png)
 
