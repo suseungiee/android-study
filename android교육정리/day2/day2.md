@@ -50,7 +50,9 @@ onCreate → onStart→onResume까지는 빠르게 진행된다
 **onPause()**
 
 - 다중창 모르도 다른 앱 사용하는 경우(activity가 focus 잃음)
-- diaglog로 화면이 덮일 때
+- diaglog로 화면이 덮일 때(이떄 dialog는 activity로 구현했을때)
+
+    ㄴ 일반적인 diaglog는 onPause호출안됨
 
 **onStop()**
 
