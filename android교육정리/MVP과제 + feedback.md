@@ -197,6 +197,9 @@ val path = "${itemView.context.cacheDir}/$FOOD_DETAIL_DIR"
                         .into(descriptImg)
             }
 ```
+- 이건 메모리캐싱관련 리뷰
+![](https://i.imgur.com/KbiD1TA.png)
+
 ### ViewPager
 - recyclerview랑 같다
 - viewPager스크롤 무한으로 하려면 getItemCount만 큰 값으로 설정해주고 onBindViewHolder할때 position값만 처리해주면 된다
