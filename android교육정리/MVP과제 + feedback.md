@@ -1,30 +1,30 @@
 # MVP과제 + feedback
 
-- gradle에서 라이브러리 버전값 변수로 분리 가능 -> project수준의 bulid.gradle에 추가
+### gradle에서 라이브러리 버전값 변수로 분리 가능 -> project수준의 bulid.gradle에 추가
 ```kotlin
 ext.kotlin_version = "1.4.21"
 ext.retrofit2_version = "2.6.2"
 ext.glide_version = "4.11.0"
     
 ```
-- serialized사용할 때 명시적 naming을 해주는게좋다. 받아오는 값은 naming, 그 외의 값은 그냥 선언
-- recyclerview adapter layout설정해주는거 xml에서도 가능.
+### serialized사용할 때 명시적 naming을 해주는게좋다. 받아오는 값은 naming, 그 외의 값은 그냥 선언
+### recyclerview adapter layout설정해주는거 xml에서도 가능.
 ![](https://i.imgur.com/RIVgUQB.png)
 
-- 메서드 이름은 camel case
-- data class에 constructor 추가하면 생성자 사용가능
-- 값 설정할때 그냥 2 이렇게보다 상수로 선언해주기
-- 인터페이스 이름은 Pascal case
-- 모듈이름은 소문자로
-- 패키지이름도 소문자 -> Class로 착각할 수 있다.
-- mvp패턴으로 구현할 때 recycler view는 bind로 충분하다. 추가적으로 view와 presenter로 나누면 번거롭다
-- 클래스에서 생성자에 var, val붙여주면 필드값으로 사용가능하다 -> init{}불필요
+### 메서드 이름은 camel case
+### data class에 constructor 추가하면 생성자 사용가능
+### 값 설정할때 그냥 2 이렇게보다 상수로 선언해주기
+### 인터페이스 이름은 Pascal case
+### 모듈이름은 소문자로
+### 패키지이름도 소문자 -> Class로 착각할 수 있다.
+### mvp패턴으로 구현할 때 recycler view는 bind로 충분하다. 추가적으로 view와 presenter로 나누면 번거롭다
+### 클래스에서 생성자에 var, val붙여주면 필드값으로 사용가능하다 -> init{}불필요
 ```kotlin
 class ImageAdapter(var data: MutableList<String>, val hastStr: String, val foodName: String)
 ```
-- var는 getter, setter가 이미 있으므로 setter 필요없다
-- 모듈화 분리시킬때 java version은 웬만하면 통일시키기
-- 모듈화 분리시킬때 데이터클래스도 보내줘야한다. -> 이름만 다르게해줘서 나중에 내부적으로 convert해주는 코드 필요. 이거는 자동으로 해주는거 없다. 일일히 수작업 필요
+### var는 getter, setter가 이미 있으므로 setter 필요없다
+### 모듈화 분리시킬때 java version은 웬만하면 통일시키기
+### 모듈화 분리시킬때 데이터클래스도 보내줘야한다. -> 이름만 다르게해줘서 나중에 내부적으로 convert해주는 코드 필요. 이거는 자동으로 해주는거 없다. 일일히 수작업 필요
 ```kotlin=
 data class OnbanResponse(
         @SerializedName("statusCode")
