@@ -268,9 +268,9 @@ interface RetrofitService {
     @GET("/onban/main/")
     suspend fun getMain(): OnbanResponse
     
-    @POST("/services/T02B3276ZT4/B02D4660XK2/itQUMQeQsdiUWZ330Q5sxCLG")
-    fun postOrder(@Body order: OrderRequest): Call<OrderRequest>
-    //이건 인자를 받는 동적 retrofit post
+    @GET("/onban/detail/{detail_hash}")
+    suspend fun getDetail(@Path(value = "detail_hash", encoded = true)hast: String): FoodDetailResponse
+    //이건 인자를 받는 동적 retrofit get
 }
 
 ```
