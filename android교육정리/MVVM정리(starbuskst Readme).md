@@ -334,7 +334,7 @@ with(binding){
 //with쓰면 해당블록내부에서는 binding 안써줘도된다.
 ```
 - xml에서 binding adapter이용해서 viewModel의 item 연결해주기
-```kotlin=
+```kotlin
     <data>
         <variable
             name="viewModel"
@@ -443,7 +443,7 @@ fun loadOrderItemList(items : List<ItemDetail>) {
 - Database사용하기위한 라이브러리
 - DB인스턴스를 만든 뒤 DAO라는 인터페이스를 통해 query를 수행한다
 - 선언은 상관없지만 query는 background thread에서 수행해야한다.
-```kotlin=
+```kotlin
 @Database(entities = [Favorite::class, ItemDetail::class], version = 1)
 abstract class LocalDatabase : RoomDatabase() {
     abstract fun favoriteDao() : FavoriteDao
