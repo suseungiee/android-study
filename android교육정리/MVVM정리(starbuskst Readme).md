@@ -4,7 +4,7 @@
      - View -> Event -> ViewModel -> Business Logic -> State -> View
 - view에서는 viewModel의 데이터를 observe하고, viewModel에서는 UI에 표시될 데이터 및 데이터의 처리를 담당한다.
 - viewModel을 다음과 같이 factory클래스를 이용해서 생성한다
-```kotlin=
+```kotlin
 class ViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return with(modelClass) {
@@ -40,7 +40,7 @@ class ViewModelFactory(private val context: Context) : ViewModelProvider.Factory
 }
 ```
 - viewModel은 의존성 주입을 통해 repository를 가지고있으며 repository를 통해 데이터 처리를 담당한다
-```kotlin=
+```kotlin
 object Injection {
     fun provideEventRepository(sharedPref : SharedPreferences) : EventRepository = EventRepository(sharedPref)
     fun provideHomeRepository() : HomeRepository = HomeRepository()
@@ -69,7 +69,7 @@ class OrderRepository {
 View의 코드가 줄어드는 목적으로 바인딩 어댑터를 사용할 수 도 있지만 반대로 이 코드를 변경시키는 곳이 코드에도 있고 xml에도 있고 바인딩 어댑터에도 있으면 분석의 복잡도가 더욱 올라가는 역효과가 나기도 합니다
 - binding adapter는 모든 xml에서 사용할 수 있으므로 전역적으로 사용가능한 부분만 작성하는 것이 좋다.
 - 여러가지 인자를 받는경우 xml에서는 2개의 property를 적용시켜줘야한다
-```kotlin=
+```kotlin
 @BindingAdapter("app:rectUploadPath","app:rectThumbUrl")
 fun loadRectImage(imageView: ImageView, uploadPath: String, thumbUrl: String){
     Glide.with(imageView.context)
@@ -127,7 +127,7 @@ BindingAdapter는 기본적으로 입력으로 주어진 타입에 따라 기본
 
 ### navigation graph
 - 인자 전달
-```kotlin=
+```kotlin
 <fragment
         android:id="@+id/nv_order_list"
         android:name="com.example.starbuckst.ui.order.OrderListFragment"
@@ -157,7 +157,7 @@ args.item?.koreanName
 //이렇게 접근가능
 ```
 - toolbar 사용
-```kotlin=
+```kotlin
 private fun initToolbar() {
         with(activity as AppCompatActivity) {
             setSupportActionBar(binding.tbOrderList)
@@ -176,7 +176,7 @@ private fun initToolbar() {
 - soundManager를 사용하면 된다
 - 소리는 res/raw에 저장하면 된다
 
-```kotlin=
+```kotlin
 soundPool = SoundPool.Builder().build()
 soundManager = SoundManager(requireActivity(), soundPool)
 soundManager.addSound(0, R.raw.bell_ring)
@@ -219,7 +219,7 @@ public class SoundManager {
 ### animation
 - 기본적으로 move, rotate, resize, transparent등이 있다
 - res/anim폴더에 animation효과에 따른 내용 작성한다
-```kotlin=
+```kotlin
 <?xml version="1.0" encoding="utf-8"?>
 <translate
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -229,7 +229,7 @@ public class SoundManager {
 </translate>
 ```
 - 이후 activity, fragment에서 view랑 animation 연결해주면된다
-```kotlin=
+```kotlin
 lateinit var animation : Animation
 
 animation = AnimationUtils.loadAnimation(requireActivity().applicationContext, R.anim.move_animation)
@@ -239,7 +239,7 @@ binding.ivStar.animation = animation
 
 ### Notification(푸시알림)
 - channel을 만들어줘야 푸시알림이 보여된다. 즉 createChannel을 호출해줘야한다(application()상속받은 최상위에서 해주면 된다.)
-```kotlin=
+```kotlin
 const val CHANNEL_ID = "ID_NOTIFICATION"
 const val NOTIFICATION_ID = 88
 object Notification {
@@ -289,7 +289,7 @@ object Notification {
 ### Application()상속한 최상위 클래스
 - 어플리케이션 컴포넌트 사이에서 공동으로 멤버를 사용할 수 있게해주는 클래스
 - Manifest에 name 등록해줘야한다
-```kotlin=
+```kotlin
 class App: Application() {
     init {
         instance = this
@@ -327,7 +327,7 @@ class App: Application() {
 ```
 ### RecyclerView(data binding으로 사용하는 방법)
 - view에서 adapter 객체를 만들어주고 recyclerview와 연결해준다
-```kotlin=
+```kotlin
 with(binding){
     rvProduct.adapter = OrderListAdapter()
 }
@@ -392,7 +392,7 @@ fun loadOrderItemList(items : List<ItemDetail>) {
 // https://developer.android.com/codelabs/kotlin-android-training-diffutil-databinding
 ```
 - adapter 및 viewHolder 만들기
-```kotlin=
+```kotlin
     <data>
         <variable
             name="itemDetail"
@@ -436,7 +436,7 @@ fun loadOrderItemList(items : List<ItemDetail>) {
     //OrderListAdapter.에서 이렇게 return해줘서 viewholder에서 binding사용할 수 있게 해준다
 ```
 - 마지막으로 activity나 fragment에서 liveData의 값의 변경을 observe할 수 있게 해준다
-```kotlin=
+```kotlin
  binding.lifecycleOwner = this
 ```
 ### Room(Database)
@@ -508,7 +508,7 @@ CoroutineScope(Dispatchers.IO).launch{
 
 ```
 ### Data binding
-```kotlin=
+```kotlin
     <data>
         <variable
             name="viewModel"
